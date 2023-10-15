@@ -1,3 +1,3 @@
 ﻿  Sorting Algorithms.cpp
-C:\Users\marko\Documents\Algoritmer-Datastruk\Algoritmer-Datastruk\Sorting Algorithms\Sorting Algorithms.cpp(206,25): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  Sorting Algorithms.vcxproj -> C:\Users\marko\Documents\Algoritmer-Datastruk\Algoritmer-Datastruk\Sorting Algorithms\x64\Debug\Sorting Algorithms.exe
+C:\Users\marko\Documents\Algoritmer-Datastruk\Sorting-Aglorithms-Compulsory2\Sorting Algorithms.cpp(220,25): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Sorting Algorithms.vcxproj -> C:\Users\marko\Documents\Algoritmer-Datastruk\Sorting-Aglorithms-Compulsory2\x64\Debug\Sorting Algorithms.exe

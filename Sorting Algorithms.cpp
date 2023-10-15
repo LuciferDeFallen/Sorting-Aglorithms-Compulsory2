@@ -178,6 +178,7 @@ void mergeSort(int arr[], int size) {
 // Sorts provided list using provided sorting function
 // Displays sorting time in milliseconds and validates result
 void sortList(int list[], int size, void (*sortingAlgorithm)(int[], int)) {
+
     std::cout << "Generating random list of size " << size << "...\n";
     createRandomList(size, list);
     std::cout << "Checking list: ";
@@ -192,7 +193,20 @@ void sortList(int list[], int size, void (*sortingAlgorithm)(int[], int)) {
 
     std::cout << "Finished in " << delta.count() * 1000 << "ms\n";
     std::cout << "Checking list: ";
-    validateList(list, size);
+    validateList(list, size); 
+}
+
+// I used this to display just the size and time to copy into the pdf
+void sortList1(int list[], int size, void (*sortingAlgorithm)(int[], int)) {
+    createRandomList(size, list);
+    // printList(list1, size1); // Display original list
+
+    auto t0 = std::chrono::high_resolution_clock::now(); // Store current time
+    sortingAlgorithm(list, size); // Sort the list
+    auto t1 = std::chrono::high_resolution_clock::now(); // Store time after sorting
+    std::chrono::duration<double> delta = t1 - t0; // Calculate elapsed time
+
+    std::cout << "Size: " << size << " Time: " << delta.count() * 1000 << "ms\n";
 }
 
 
